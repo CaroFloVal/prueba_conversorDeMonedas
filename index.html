@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API's</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <h1>Conversor de monedas Nacional</h1>
+
+    <div class="container">
+        <div>
+            <input type="number" class="ingresarMoneda" placeholder="ingresa el monto en pesos chilenos">
+
+        </div>
+        <div>
+            <p>Moneda a convertir:</p>
+            <select name="" id="myCoins">
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+                <option value="utm">UTM</option>
+
+            </select>
+        </div>
+        <div id="boton">
+            <button id="btn-buscar">Buscar</button>
+        </div>
+    </div>
+
+    <!-- scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="./assets/js/script.js"></script>
 </body>
 </html>
