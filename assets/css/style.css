@@ -1,57 +1,61 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    background-color: #038DE5;
-    color: white;
-  }
-
-  h1 {
-    text-align: center;
-    color: #012B46;
-  }
-  
-  .container {
+body{
+    background-color: #17F99C;
+    
+}
+.container {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(3, 16, 86);
+    background-color: #154360;
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 4%;
+    border-radius: 8%;
+  }
+  h1{
+    text-align: center;
+    color: #154360;
   }
   
-  #myCoins {
-    
-    margin-bottom: 20px; 
+  .myCoins {
+    width: 90%;
+    margin-top: 20px; 
+    color: #17F99C;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  p{
+    color: #17F99C;
   }
   
-  .ingresarMoneda {
+  input, select {
     padding: 15px 10px;
     outline: none;
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px; 
   }
   
   #btn-buscar {
     padding: 5px 15px;
     border: none;
-    color: #17F99C;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0297f4;
+    color: white;
+    font-family: fantasy;
+    background-color: #17F99C;
     font-size: 1.4rem;
     outline: none;
-    margin-bottom: 20px; 
-    border-radius: 10%;
   }
   
   #btn-buscar:hover {
     cursor: pointer;
-    background-color: darkcyan;
+    background-color: #17d4de;
+  }
+  #myChart { 
+    width: "400";
+    height:"200";
+    background-color: #f0f8ff;
+    
   }

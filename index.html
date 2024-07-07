@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +11,22 @@
     <h1>Conversor de monedas Nacional</h1>
 
     <div class="container">
-        <div>
-            <input type="number" class="ingresarMoneda" placeholder="ingresa el monto en pesos chilenos">
 
+        <input type="number" id="monto" placeholder="ingresa el monto en pesos chilenos">
+       
+        <p>Moneda a convertir:</p>
+        <select  id="moneda">
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">UF</option>
+            <option value="utm">UTM</option>
+        </select>
+        <button id="btn-buscar" onclick="convertirMoneda()">Buscar</button>
+        <div class="myCoins" id="resultado">
         </div>
-        <div>
-            <p>Moneda a convertir:</p>
-            <select name="" id="myCoins">
-                <option value="dolar">Dólar</option>
-                <option value="euro">Euro</option>
-                <option value="uf">UF</option>
-                <option value="utm">UTM</option>
-
-            </select>
-        </div>
-        <div id="boton">
-            <button id="btn-buscar">Buscar</button>
-        </div>
+        <canvas id="myChart"></canvas>
     </div>
-
+    
     <!-- scripts -->
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      <script src="./assets/js/script.js"></script>
